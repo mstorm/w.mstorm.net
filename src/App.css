@@ -1,33 +1,61 @@
-.App {
-  text-align: center;
+.section {
+    font-size: 1em;
+    line-height: 180%;
+    /*font-family: 'Nanum Gothic', sans-serif;*/
+    color: #434142;
+    text-align: center;
+    background-color: #e9e9e9;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#fp-nav ul li a span {
+    background: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fp-slidesNav ul li a span{
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nanum Myeongjo', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide img {
+    width: 100%;
+}
+
+strong {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 0.5em;
+}
+
+.sec-main {
+    color: #fffafa;
+    /*color: #e9e9e9;*/
+    text-shadow: 2px 2px 4px #000;
+    background-image: url('/img/IMG_1304.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sec-main a {
+    /*color: #434142;*/
+    color: #fffafa;
+    text-decoration: none;
+}
+
+.sec-gallery {
+    background-color: #000;
+}
+
+.welcome {
+    margin: 2.5em auto;
 }
