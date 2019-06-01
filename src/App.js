@@ -17,7 +17,7 @@ const App = () => (
                         <h1>초대합니다</h1>
                         <h2>민철과 소영</h2>
                         <p>2019년 7월 6일 토요일 낮 12시</p>
-                        <p><a href="https://map.naver.com/local/siteview.nhn?code=11872992" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
+                        <p><a href="https://map.naver.com/local/siteview.nhn?code=11872992" rel="noopener noreferrer" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
                     </div>
                     <div className="section sec-welcome">
                         <h1>인사말</h1>
@@ -30,6 +30,16 @@ const App = () => (
                             <li><strong>권종욱</strong>&middot;<strong>김은옥</strong>의 장남 <strong>민철</strong></li>
                             <li><strong>이윤식</strong>&middot;<strong>유율란</strong>의 장녀 <strong>소영</strong></li>
                         </ul>
+                    </div>
+                    <div className="section sec-location">
+                        <h1>오시는 길</h1>
+                        <a href="https://map.naver.com/local/siteview.nhn?code=11872992" rel="noopener noreferrer" target="_blank"><img src="/naver-map.png" alt="분당앤스퀘어" className="map" /></a>
+                        <div>
+                            <h3>분당앤스퀘어</h3>
+                            <p className="tel">031-728-5300</p>
+                            <p className="addr1">경기도 성남시 분당구 탄천상로151번길 20</p>
+                            <p className="addr2">경기도 성남시 분당구 구미동 159</p>
+                        </div>
                     </div>
                     <div className="section sec-gallery">
                         <div className="slide"><img src="img/IMG_1221.jpg" alt="img1"/></div>
