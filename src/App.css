@@ -33,19 +33,36 @@ ul li {
 }
 
 .sec-main {
+    position: relative;
     color: #fffafa;
     /*color: #e9e9e9;*/
-    text-shadow: 2px 2px 4px #000;
+    background: rgba(0,0,0,0.3);
+}
+
+.sec-main:after {
+    content: "";
+    position: absolute;
     background-image: url('/img/IMG_1304.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8; /* Tone the image down further by giving it transparency */
 }
 
 .sec-main a {
     /*color: #434142;*/
     color: #fffafa;
     text-decoration: none;
+}
+
+.sec-main p {
+    padding: 0;
+    margin: 0;
 }
 
 .sec-gallery {

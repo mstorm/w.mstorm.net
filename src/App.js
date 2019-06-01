@@ -16,8 +16,8 @@ const App = () => (
                     <div className="section sec-main">
                         <h1>초대합니다</h1>
                         <h2>민철과 소영</h2>
-                        <p>2019년 7월 6일 토요일 낮 12시</p>
-                        <p><a href="https://map.naver.com/local/siteview.nhn?code=11872992" rel="noopener noreferrer" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
+                        <p className="date">2019년 7월 6일 토요일 낮 12시</p>
+                        <p className="location"><a href="https://map.naver.com/local/siteview.nhn?code=11872992" rel="noopener noreferrer" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
                     </div>
                     <div className="section sec-welcome">
                         <h1>인사말</h1>
