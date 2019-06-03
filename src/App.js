@@ -3,6 +3,23 @@ import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 const weeks = "일월화수목금토".split('');
+const images = [
+    // 'img/IMG_1221.jpg',
+    'img/IMG_1304.jpg',
+    'img/IMG_1657.jpg',
+    'img/IMG_1709.jpg',
+    'img/IMG_1917.jpg',
+    'img2/IMG_1285.jpg',
+    'img2/IMG_1373.jpg',
+    'img2/IMG_1467.jpg',
+    'img2/IMG_1551.jpg',
+    'img2/IMG_1688.jpg',
+    'img2/IMG_1911.jpg',
+    'img2/IMG_1947.jpg',
+    'img2/IMG_1979.jpg',
+    'img2/IMG_1983.jpg',
+    'img2/IMG_2002.jpg'
+];
 
 const App = () => (
     <ReactFullpage
@@ -98,25 +115,19 @@ const App = () => (
                         <h2>오시는 길</h2>
                         <a href="https://map.naver.com/local/siteview.nhn?code=11872992" rel="noopener noreferrer"
                            target="_blank"><img src="/naver-map.png" alt="분당앤스퀘어" className="map"/></a>
-                        <div>
-                            <p><strong>분당앤스퀘어</strong> <span className="tel">031-728-5300</span></p>
+                        <div className="addr">
+                            <p><strong>분당앤스퀘어</strong> <a href="tel:031-728-5300" className="tel">031-728-5300</a></p>
                             <p className="addr1">경기도 성남시 분당구 탄천상로151번길 20</p>
                             <p className="addr2">경기도 성남시 분당구 구미동 159</p>
                         </div>
                     </div>
                     <div className="section sec-gallery">
-                        <div className="slide"><img src="img/IMG_1221.jpg" alt="img1"/></div>
-                        <div className="slide"><img src="img/IMG_1304.jpg" alt="img2"/></div>
-                        <div className="slide"><img src="img/IMG_1657.jpg" alt="img3"/></div>
-                        <div className="slide"><img src="img/IMG_1709.jpg" alt="img4"/></div>
-                        <div className="slide"><img src="img/IMG_1917.jpg" alt="img5"/></div>
-                        <div className="slide"><img src="img2/IMG_1178-tome.jpg" alt="img6"/></div>
-                        <div className="slide"><img src="img2/IMG_1285.jpg" alt="img7"/></div>
-                        {/*<div className="slide"><img src="img2/IMG_1298.jpg" alt="img8"/></div>*/}
-                        <div className="slide"><img src="img2/IMG_1326.jpg" alt="img9"/></div>
-                        <div className="slide"><img src="img2/IMG_1373.jpg" alt="img10"/></div>
-                        <div className="slide"><img src="img2/IMG_1467.jpg" alt="img11"/></div>
-                        <div className="slide"><img src="img2/IMG_1911.jpg" alt="img12"/></div>
+                        <div className="slide">
+                            <h2>갤러리</h2>
+                            <img src="img/IMG_1221.jpg" alt="img/IMG_1221.jpg"/>
+                            <p className="notice">좌우로 밀어서 사진을 감상하세요.</p>
+                        </div>
+                        {images.map((o, i) => <div className="slide" key={i}><img src={o} alt={o}/></div>)}
                     </div>
                 </ReactFullpage.Wrapper>
             );

@@ -11,7 +11,11 @@
     background: #fff !important;
 }
 
-.fp-slidesNav ul li a span{
+.fp-slidesNav.fp-bottom {
+    width: 80%;
+}
+
+.fp-slidesNav ul li a span {
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,6 +41,10 @@ h3 {
 strong {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+p {
+    margin: 0;
 }
 
 ul {
@@ -70,6 +78,14 @@ ul li {
     opacity: 0.8; /* Tone the image down further by giving it transparency */
 }
 
+.sec-main .fp-tableCell {
+    vertical-align: bottom;
+}
+
+.sec-main .fp-tableCell :last-child {
+    padding-bottom: 25%;
+}
+
 a {
     text-decoration: none;
 }
@@ -89,7 +105,7 @@ a {
 }
 
 .sec-gallery {
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 .welcome {
@@ -101,9 +117,8 @@ a {
     max-height: 50%;
 }
 
-.addr1, .addr2 {
-    padding: 0;
-    margin: 0;
+.addr {
+    margin: 1.2em 0 0;
 }
 
 .slide img {
@@ -118,4 +133,10 @@ a {
 
 .calendar strong {
     color: orange;
+}
+
+.notice {
+    color: #999;
+    font-size: 0.9em;
+    font-family: "Nanum Gothic";
 }
