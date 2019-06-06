@@ -132,11 +132,14 @@ a {
 }
 
 .calendar strong {
-    color: orange;
+    color: #fff;
+    background-color: pink;
+    padding: 0.1em 0.5em;
+    border-radius: 100%;
 }
 
 .notice {
     color: #999;
     font-size: 0.9em;
-    font-family: "Nanum Gothic";
+    font-family: "Nanum Gothic", sans-serif;
 }
