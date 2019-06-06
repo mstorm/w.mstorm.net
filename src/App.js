@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-246655-7');
 
 const weeks = "일월화수목금토".split('');
 const images = [
@@ -24,20 +27,27 @@ const images = [
 const App = () => (
     <ReactFullpage
         licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
+        anchors={['main', 'welcome', 'calendar', 'location', 'gallery']}
         navigation
         slidesNavigation
         slidesNavPosition="bottom"
         controlArrows={0}
-        scrollingSpeed="500"
+        scrollingSpeed="700"
+        afterLoad={() => {
+            ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+        }}
+        afterSlideLoad={() => {
+            ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+        }}
+
         render={({state, fullpageApi}) => {
             return (
                 <ReactFullpage.Wrapper className="App-header">
                     <div className="section sec-main">
                         <h1>초대합니다</h1>
                         <h2>민철과 소영</h2>
-                        <p className="date">2019년 7월 6일 토요일 낮 12시</p>
-                        <p className="location"><a href="https://map.naver.com/local/siteview.nhn?code=11872992"
-                                                   rel="noopener noreferrer" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
+                        <p className="date"><span onClick={() => fullpageApi.moveTo('calendar')}>2019년 7월 6일 토요일 낮 12시</span></p>
+                        <p className="location"><span onClick={() => fullpageApi.moveTo('location')}>분당앤스퀘어 4층 컨벤션홀</span></p>
                     </div>
                     <div className="section sec-welcome">
                         <h2>인사말</h2>
@@ -54,8 +64,7 @@ const App = () => (
                     <div className="section sec-calendar">
                         <h2>일정</h2>
                         <p className="date">2019년 7월 6일 토요일 낮 12시</p>
-                        <p className="location"><a href="https://map.naver.com/local/siteview.nhn?code=11872992"
-                                                   rel="noopener noreferrer" target="_blank">분당앤스퀘어 4층 컨벤션홀</a></p>
+                        <p className="location" onClick={() => fullpageApi.moveTo('location')}>분당앤스퀘어 4층 컨벤션홀</p>
                         <table className="calendar">
                             <thead>
                             <tr>
