@@ -3,6 +3,13 @@ import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import ReactGA from 'react-ga';
 
+// OnLoad
+window.Kakao.init('6029775d10a8c8c42518e57546938470');
+function sendLink() {
+    window.Kakao.Link.sendScrap({
+        requestUrl: 'http://w.mstorm.net'
+    });
+}
 ReactGA.initialize('UA-246655-7');
 
 const weeks = "일월화수목금토".split('');
@@ -27,7 +34,7 @@ const images = [
 const App = () => (
     <ReactFullpage
         licenseKey="OPEN-SOURCE-GPLV3-LICENSE"
-        anchors={['main', 'welcome', 'calendar', 'location', 'gallery']}
+        anchors={['main', 'welcome', 'calendar', 'location', 'gallery', 'share']}
         navigation
         slidesNavigation
         slidesNavPosition="bottom"
@@ -137,6 +144,10 @@ const App = () => (
                             <p className="notice">좌우로 밀어서 사진을 감상하세요.</p>
                         </div>
                         {images.map((o, i) => <div className="slide" key={i}><img src={o} alt={o}/></div>)}
+                    </div>
+                    <div className="section sec-share">
+                        <h2>공유하기</h2>
+                        <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" alt="카카오톡 공유하기" onClick={() => sendLink()} />
                     </div>
                 </ReactFullpage.Wrapper>
             );
