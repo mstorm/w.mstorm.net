@@ -82,7 +82,7 @@ ul li {
     vertical-align: bottom;
 }
 
-.sec-main .fp-tableCell :last-child {
+.sec-main .fp-tableCell p:last-child {
     padding-bottom: 25%;
 }
 
