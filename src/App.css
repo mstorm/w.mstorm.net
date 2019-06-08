@@ -68,7 +68,7 @@ ul li {
     position: absolute;
     background-image: url('/img/IMG_1304.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 25%;
     background-size: cover;
     top: 0;
     left: 0;
@@ -83,7 +83,7 @@ ul li {
 }
 
 .sec-main .fp-tableCell p:last-child {
-    padding-bottom: 25%;
+    padding-bottom: 15em;
 }
 
 a {
