@@ -13,7 +13,7 @@
     "dot-prop": ">=5.1.1",
     "minimist": ">=1.2.3",
     "serialize-javascript": ">=2.1.1",
-    "set-value": ">=2.0.1"
+    "set-value": ">=4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
