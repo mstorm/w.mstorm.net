@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://w.mstorm.net",
   "dependencies": {
-    "@fullpage/react-fullpage": "^0.1.14",
+    "@fullpage/react-fullpage": "^0.1.39",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
